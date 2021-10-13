@@ -61,14 +61,6 @@ bot.on('message', msg=>{
 
 })
 
-bot.on('message', msg=>{
-  var things = ["Traps aren't gay", "F E M I N I N E  P E N I S"];
-  var thing = things[Math.floor(Math.random()*things.length)];
-  if(msg.content.toLowerCase() ==="!futa" || msg.content.toLowerCase() ==="-futa"){
-      msg.channel.send('' + thing);
-  }
-
-})
 
 
 bot.on('message', msg=>{
@@ -185,10 +177,6 @@ bot.on('message', msg=>{
       msg.channel.send("", {files: ["" + thing]});
   }
 })
-
-
-/////musicbot
-
 
 
 bot.login(process.env.BOT_TOKEN);
