@@ -27,6 +27,7 @@ bot.on('message', msg=>{
   }
 })
 
+
 bot.on('message', msg=>{
   if(msg.content.toLowerCase() ==="!maozinha" || msg.content.toLowerCase() ==="-maozinha"){
       msg.reply("I have an appointment with my doctor.");
@@ -139,11 +140,6 @@ bot.on('message', msg=>{
   }
 })
 
-bot.on('message', msg=>{
-  if(msg.content.toLowerCase() ==="!rods" || msg.content.toLowerCase() ==="-rods"){
-      msg.channel.send("", {files: ["https://img.fireden.net/v/image/1506/78/1506786636491.png"]});
-  }
-})
 
 bot.on('message', msg=>{
   if(msg.content.toLowerCase() ==="!sioux" || msg.content.toLowerCase() ==="-rods"){
