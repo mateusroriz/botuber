@@ -41,6 +41,12 @@ bot.on('message', msg=>{
 })
 
 bot.on('message', msg=>{
+  if(msg.content.toLowerCase() ==="!marci" || msg.content.toLowerCase() ==="-marci"){
+      msg.reply("*whistle* *whistle*.");
+  }
+})
+
+bot.on('message', msg=>{
   if(msg.content.toLowerCase() ==="!goodbye" || msg.content.toLowerCase() ==="-goodbye"){
       msg.reply("GOOD BYE JOJO!");
   }
