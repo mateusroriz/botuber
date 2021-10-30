@@ -35,6 +35,12 @@ bot.on('message', msg=>{
 })
 
 bot.on('message', msg=>{
+  if(msg.content.toLowerCase() ==="!void" || msg.content.toLowerCase() ==="-void"){
+      msg.reply("Time grinds even mountains to dust.");
+  }
+})
+
+bot.on('message', msg=>{
   if(msg.content.toLowerCase() ==="!goodbye" || msg.content.toLowerCase() ==="-goodbye"){
       msg.reply("GOOD BYE JOJO!");
   }
