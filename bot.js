@@ -28,6 +28,12 @@ bot.on('message', msg=>{
 })
 
 bot.on('message', msg=>{
+  if(msg.content.toLowerCase() ==="!maozinha" || msg.content.toLowerCase() ==="-maozinha"){
+      msg.reply("I have an appointment with my doctor.");
+  }
+})
+
+bot.on('message', msg=>{
   if(msg.content.toLowerCase() ==="!goodbye" || msg.content.toLowerCase() ==="-goodbye"){
       msg.reply("GOOD BYE JOJO!");
   }
