@@ -1,4 +1,3 @@
-//**Begin of code */
 var Discord = require('discord.js');
 var bot = new Discord.Client();
 
@@ -165,11 +164,6 @@ bot.on('message', msg=>{
   }
 })
 
-bot.on('message', msg=>{
-  if(msg.content.toLowerCase() ==="!retard" || msg.content.toLowerCase() ==="-retard"){
-      msg.channel.send("", {files: ["https://images-cdn.9gag.com/photo/aV30bOn_460s.jpg"]});
-  }
-})
 
 bot.on('message', msg=>{
   if(msg.content.toLowerCase() ==="!dororo" || msg.content.toLowerCase() ==="-dororo"){
@@ -179,7 +173,10 @@ bot.on('message', msg=>{
 
 
 
+function td(x, str) {
+    console.info(`TD(${str}): `, JSON.stringify(x, getCircularReplacer()));
+  return x;
+}
 
 bot.login(process.env.BOT_TOKEN);
 
-//**End of code**
